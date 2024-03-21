@@ -10,6 +10,19 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
+			let Fhgst = arr[0]
+			let Shgst = arr[1]
+
+			for(let num of arr) {
+				if(num>Fhgst) {
+					Shgst = Fhgst
+					Fhgst = num
+				}
+				if(num>Shgst && num!=Fhgst) {
+					Shgst = num;
+				}
+			}
+			
 			
 		}
 
